@@ -1,3 +1,8 @@
-import data from './data.json' assert { type : "json"};
+// 2023-06-28 this feature is experimental
+// import data from './data.json' assert { type : "json"};
+import * as tools from './tools.js';
 
-data.forEach((user) => console.log(user));
+const data = tools.readJsonFileAsVariable('./data.json');
+console.log(data);
+
+// data.forEach((user) => console.log(user));
