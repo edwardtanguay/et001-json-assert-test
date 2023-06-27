@@ -3,6 +3,5 @@
 import * as tools from './tools.js';
 
 const data = tools.readJsonFileAsVariable('./data.json');
-console.log(data);
 
-// data.forEach((user) => console.log(user));
+data.forEach((user) => console.log(user));
